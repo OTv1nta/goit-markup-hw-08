@@ -1,0 +1,38 @@
+.social-media {
+    @media  screen and(min-width: 768px) {
+        display: none;
+    }
+    display: flex;
+    justify-content: flex-start;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__item {
+        display: flex;
+       margin-top: 70px;
+       &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        height: 22px;
+    }
+    &:not(:first-child) {
+        padding-left: 10px;
+    }
+    }
+
+
+    &__link {
+    
+        color: $accent-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        padding-right: 10px;
+    }
+    &__border{
+     
+    }
+}

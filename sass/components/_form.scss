@@ -1,0 +1,159 @@
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+textarea 
+{
+	@media (min-width: 1200px) {
+		width: 448px;
+	}
+	resize: none;
+	cursor: pointer;
+	outline: none;
+	width: 370px;
+	height: 120px;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&::placeholder 
+    {
+		color: rgba(117, 117, 117, 0.5);
+    }
+	&:hover, &:focus 
+    {
+		border: 1px solid $accent-color;
+    }
+}
+	
+
+
+.form-field 
+{
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover, &:focus-within 
+    {
+		fill: $accent-color;
+    }
+	
+	&__label 
+    {
+		display: flex;
+		margin-bottom: 4px;
+		color: $title-text-color;
+    }
+
+	&--text{
+		@media (min-width: 1200px) {
+			font-size: 14px;
+			line-height: 1.71;
+			letter-spacing: 0.03em;
+			margin-top: 10px;
+		}
+		margin-top: 20px;
+	}
+	
+	&__input 
+    {
+	    @media (min-width: 1200px) {
+			width: 448px;
+		}
+		margin: 0;
+		padding-left: 42px;
+		width: 370px;
+		height: 40px;
+		border-radius: 4px;
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		cursor: pointer;
+		outline: none;
+    }
+	
+	input:hover, input:focus 
+    {
+		border: 1px solid $accent-color;
+    }
+	
+	&__icon 
+    {
+		position: absolute;
+		margin-top: 32px;
+		margin-left: 15px;
+		cursor: pointer;
+		&-checkbox 
+        {
+			@media (min-width: 1200px) {
+				margin-top: 4px;
+			}
+			font-size: 18px;
+			display: inline-block;
+			width: 16px;
+			height: 15px;
+			margin-left: 12px;
+			margin-right: 8px;
+			margin-top: -1px;
+			border: 2px solid $form-field-checkbox;
+			border-radius: 2px;
+			transition: transform 250ms linear;
+        }
+    }
+	
+	&__comment 
+    {
+		padding: 16px;
+		border-radius: 4px;
+		border: 1px solid rgba(33, 33, 33, 0.2);
+    }
+	&__comment 
+    {
+		padding: 16px;
+		border-radius: 4px;
+		border: 1px solid rgba(33, 33, 33, 0.2);
+    }
+	
+	&__text 
+    {
+		color: $accent-color;
+		margin-left: 5px;
+    }
+	
+	&__checkbox
+    {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+		&:checked + .form-field__icon-checkbox 
+        {
+			border-color: transparent;
+			background-color: $accent-color;
+			background-size: contain;
+			background-origin: border-box;
+        }
+    }
+		
+}
+.label 
+{
+	display: block;
+	transition: transform 250ms linear;
+	margin-top: 100px;
+}
+
+.checkbox:checked~.label 
+{
+	transform: translateX(20px);
+}
+

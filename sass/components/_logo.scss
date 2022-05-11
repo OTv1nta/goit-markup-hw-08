@@ -1,0 +1,36 @@
+.logo 
+{
+	display: flex;
+	align-items: center;
+	&__web 
+    {
+		color: $accent-color;
+		font-family: Raleway, sans-serif;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 1.19;
+		text-decoration: none;
+    }
+
+	&--footer-web{
+		@media screen and (max-width: 1199px) {
+				text-align: center;
+			}
+		margin-bottom: 20px;
+	}
+	
+	&--black 
+    {
+		color: $primary-text-color;
+    }
+	
+	&--white 
+    {
+		color: $primary-white-color;
+    }
+}
+
+
+
+
+

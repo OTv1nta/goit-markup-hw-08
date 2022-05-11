@@ -1,0 +1,101 @@
+.card-set-portfolio 
+{
+
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -30px;
+	margin-top: -30px;
+	&__item 
+	{
+		@media screen and (min-width: 768px) {
+			width: 354px;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 370px;
+		}
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		
+		margin-left: 30px;
+		margin-top: 30px;
+		width: 450px;
+		justify-content: center;
+		cursor: pointer;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover 
+		{
+			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+		}
+	}
+	
+	&__border-figcaption 
+	{
+		margin-top: -20px;
+		padding-top: 20px;
+	}
+	&__overlay 
+	{
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover .overlay1 
+		{
+			transform: translatey(0);
+		}
+	}
+	
+	&__lower-text
+	{
+	    
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-bottom: 20px;
+		color: $title-text-color;
+		font-size: 16px;
+		line-height: 1.87;
+	}
+	
+}
+.overlay1 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $overlay1-background-color;
+	transform: translatey(110%);
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&>p 
+	{
+		font-size: 18px;
+		line-height: 1.55;
+		color: $primary-white-color;
+		margin: 63px 24px;
+	}
+}
+	
+
+.card-set-portfolio__lower-text, .h2 
+{
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.feature-list-portfolio .title,
+.h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 20px;
+	padding-bottom: 4px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}

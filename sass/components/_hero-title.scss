@@ -1,0 +1,42 @@
+.hero-title {
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    color: $primary-white-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    border: 1px solid transparent;
+    outline: none;
+    color: $primary-white-color;
+    background-color: $accent-color;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+    fill: var(--primary-white-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        fill: $accent-color;
+        color: $accent-color;
+        background-color: $primary-white-color;
+    }
+}
