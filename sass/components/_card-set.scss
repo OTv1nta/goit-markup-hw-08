@@ -5,9 +5,7 @@
 	@media screen and (min-width: 768px) {
 		margin-bottom: -30px;
 	}
-	@media screen and (max-width: 767px) {
 		justify-content: center;
-	}
 	&--dist{
 		justify-content: space-between;
 	}
@@ -47,10 +45,8 @@
 			margin-left: 30px;
 		}
 		&:not(:last-child) {
-		    @media screen and (max-width: 767px){
 			    margin-bottom: 30px;
 			}
-		}
     }
 	
 	&__second-title 
@@ -114,9 +110,11 @@
 }
 
 .header-footer {
-	@media screen and (max-width: 767px) {
-		text-align: center;
-		padding-top: 60px;
+	text-align: center;
+	padding-top: 60px;
+	@media screen and (min-width: 768px) {
+		text-align: start;
+		padding-top: 0;
 	}
 	
 	margin-left: 0;
@@ -127,18 +125,20 @@
 	line-height: 1.14;
 	padding-left: 0;
 	&--centre{
-		@media screen and (max-width: 1199px) {
-			text-align: center;
-			padding-top: 60px;
+		text-align: center;
+		padding-top: 60px;
+		@media screen and (min-width: 1200px) {
+			text-align: start;
+			padding-top: 0;
 		}
 	}
 
 	    &__follow{
+		@media screen and (min-width: 768px) {
+				margin-left: 30px;
+			}
 			@media screen and (min-width: 1200px) {
 		        margin-left: 80px;
-			}
-			@media screen and (min-width: 768px) and (max-width: 1199px){
-				margin-left: 30px;
 			}
 
     }
@@ -157,9 +157,13 @@
 				justify-content: space-between;
 			}
 	}
-	@media screen and(min-width: 768px) and (max-width: 1199px){
+	@media screen and(min-width: 768px){
 		margin-left: 70px;
 		margin-right: 70px;
 	}
+@media screen and(min-width: 1200px) {
+	margin-left: 0;
+	margin-right: 0;
+}
 }
 

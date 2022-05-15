@@ -1,10 +1,11 @@
 .list-button 
 {
+	display: flex;
+	flex-wrap: wrap;
 	@media screen and (min-width: 768px) {
 	    justify-content: center;
 	}
-	display: flex;
-	flex-wrap: wrap;
+	
 	&__item 
     {
 		margin-right: 8px;

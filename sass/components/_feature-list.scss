@@ -5,9 +5,10 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
-	@media screen and (max-width: 767px) {
-		margin: -30px;
+	@media screen and (min-width: 768px) {
+	    margin: 0;
 	}
+	margin: -30px;
 	justify-content: space-between;
 	&__item 
     {
@@ -26,9 +27,11 @@
 		@media screen and (min-width: 1200px) {
 			margin-left: 30px;
 		}
-		@media screen and (max-width: 767px) {
-			margin: 30px;
+		@media screen and (min-width: 768px) {
+			margin: 0;
 		}
+			margin: 30px;
+
 	
     }
 	
@@ -54,9 +57,10 @@
 		@media screen and (min-width: 1200px) {
 			width: 270px;
 		}
-		
+		display: flex;
 		margin-bottom: 30px;
-		width: 450px;
+		padding: 25px;
+		max-width: 450px;
 		height: 120px;
 		border-radius: 4px;
 		background: $button-portfolio-background-color;
@@ -64,23 +68,19 @@
 	
 	&__border 
     {
-		@media screen and (min-width: 768px) {
-			margin-left: 144px;
-		}
-		@media screen and (min-width: 1200px) {
-			margin-left: 102px;
-		}
-		margin-left: 190px;
-		margin-top: 25px;
-		margin-bottom: 25px;
+		margin-left: auto;
+		margin-right: auto;
 		width: 70px;
 		height: 70px;
     }
 	
 	&__lower 
     {
-		@media screen and(min-width: 768px) and (max-width: 1199px){
+		@media screen and(min-width: 768px){
 			width: 354px;
+		}
+		@media screen and(min-width: 1200px) {
+			width: 270px;
 		}
 		line-height: 1.71;
     }

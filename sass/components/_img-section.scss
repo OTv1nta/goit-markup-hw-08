@@ -1,9 +1,5 @@
 .img-section
 {
-	@media screen and (max-width: 1199px) {
-		display: none;
-		padding: 0;
-	}
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 0;
@@ -45,15 +41,18 @@
 	line-height: 70px;
 }
 
-.divide{
-	@media screen and (max-width: 1199px) {
-		display: none;
+.divide {
+	display: none;
+
+	@media screen and (min-width: 1200px) {
+		display: block;
 	}
 }
 
 .divide-title-hide {
-	@media screen and (max-width: 1199px) {
-		display: none;
+	display: none;
+	@media screen and (min-width: 1200px) {
+		display: block;
 	}
 	margin-top: 0;
 	margin-bottom: 50px;

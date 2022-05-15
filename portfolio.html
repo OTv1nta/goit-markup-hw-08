@@ -17,15 +17,8 @@
 <body>
     <header class="header-border">
       <div class="container logo">
-    
         <nav class="logo">
           <a class="logo__web" href="/">Web<span class="logo--black">Studio</span></a>
-          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-close" href="./images/icons.svg#close"></use>
-              <use class="icon-menu" href="./images/icons.svg#menu"></use>
-            </svg>
-          </button>
           <div class="menu-container" id="menu-container" data-menu>
             <ul class="site-nav list">
               <li class="site-nav__item">
@@ -49,15 +42,14 @@
             </ul>
     
             <ul class="social-media list">
-              <li class="social-media__item">
-                <a class="social-media__link" href="">Instagram</a>
-                <a class="social-media__link" href="">Twitter</a>
-                <a class="social-media__link" href="">Facebook</a>
-                <a class="social-media__link" href="">Linkedln</a>
-              </li>
+              <li class="social-media__item"><a class="social-media__link" href="">Instagram</a></li>
+              <li class="social-media__item"><a class="social-media__link" href="">Twitter</a></li>
+              <li class="social-media__item"><a class="social-media__link" href="">Facebook</a></li>
+              <li class="social-media__item"><a class="social-media__link" href="">Linkedln</a></li>
             </ul>
-    
+          </div>
         </nav>
+    
         <ul class="mail-phone-header list">
           <li class="mail-phone-header__item">
             <a class="mail-phone-header__link mail-phone-header__icons" href="mailto:info@devstudio.com">
@@ -72,12 +64,17 @@
               <svg class="mail-phone-header__first-icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
-              +38 096 111 11 11</a>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-close" href="./images/icons.svg#close"></use>
+            <use class="icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
-      </div>
-    
     </header>
     <main>
       <section class="section-one-padding-portfolio">
@@ -112,6 +109,7 @@
                 <div class="card-set-portfolio__overlay">
                   <img srcset="./images/web-site.jpg 370w,
                   ./images/web-site@2x.jpg 450w"
+                   sizes="100vw"
                    src="./images/web-site.jpg" 
                    alt="Технокряк"/>
                   <div class="overlay1">
@@ -134,6 +132,7 @@
                 <div class="card-set-portfolio__overlay">
                   <img srcset="./images/basketball_players.jpg 370w,
                   ./images/basketball_players@2x.jpg 450w"
+                    sizes="100vw"
                     src="./images/basketball_players.jpg"
                     alt="Постер New Orlean vs Golden Star"
                   />
@@ -157,6 +156,7 @@
                 <div class="card-set-portfolio__overlay">
                   <img srcset="./images/seafood_restaurant_logo.jpg 370w,
                   ./images/seafood_restaurant_logo@2x.jpg 450w"
+                    sizes="100vw"
                     src="./images/seafood_restaurant_logo.jpg"
                     alt="Ресторан Seafood"
                   />
@@ -180,6 +180,7 @@
                 <div class="card-set-portfolio__overlay">
                   <img srcset="./images/headphones.jpg 370w,
                   ./images/headphones@2x.jpg 450w"
+                  sizes="100vw"
                   src="./images/headphones.jpg" 
                   alt="Проект Prime"/>
                   <div class="overlay1">
@@ -202,6 +203,7 @@
                 <div class="card-set-portfolio__overlay">
                   <img srcset="./images/project_boxes.jpg 370w,
                   ./images/project_boxes@2x.jpg 450w"
+                  sizes="100vw"
                   src="./images/project_boxes.jpg" 
                   alt="Проект Boxes"/>
                   <div class="overlay1">
@@ -224,6 +226,7 @@
                 <div class="card-set-portfolio__overlay">
                   <img srcset="./images/inspiration_has_no_borders.jpg 370w,
                   ./images/inspiration_has_no_borders@2x.jpg 450w"
+                    sizes="100vw"
                     src="./images/inspiration_has_no_borders.jpg"
                     alt="Inspiration has no Borders"
                   />
@@ -247,6 +250,7 @@
                 <div class="card-set-portfolio__overlay">
                   <img srcset="./images/limited_edition.jpg 370w,
                   ./images/limited_edition@2x.jpg 450w"
+                    sizes="100vw"
                     src="./images/limited_edition.jpg"
                     alt="Издание Limited Edition"
                   />
@@ -270,6 +274,7 @@
                 <div class="card-set-portfolio__overlay">
                   <img srcset="./images/lab.jpg 370w,
                   ./images/lab@2x.jpg 450w"
+                  sizes="100vw"
                   src="./images/lab.jpg" 
                   alt="Проект LAB"/>
                   <div class="overlay1">
@@ -292,6 +297,7 @@
                 <div class="card-set-portfolio__overlay">
                   <img srcset="./images/growing_business.jpg 370w,
                   ./images/growing_business@2x.jpg 450w"
+                  sizes="100vw"
                   src="./images/growing_business.jpg" 
                   alt="Growing Business"/>
                   <div class="overlay1">
@@ -313,13 +319,12 @@
       </section>
     </main>
 <footer class="works">
-  <div class="container">
+  <div class="container flex-box--nine">
     <div class="flex-box">
       <div class="logo-footer">
         <div class="logo--footer-web">
           <a class="logo__web" href="">Web<span class="logo--white">Studio</span></a>
         </div>
-
         <address>
           <ul class="mail-phone-footer list">
             <li class="adress mail-phone-footer__item">г. Киев, пр-т Леси Украинки, 26</li>
@@ -334,8 +339,8 @@
       </div>
 
       <div>
-        <h2 class="header-footer">ПРИСОЕДИНЯЙТЕСЬ</h2>
-        <ul class="list card-set">
+        <h2 class="header-footer header-footer__follow">ПРИСОЕДИНЯЙТЕСЬ</h2>
+        <ul class="list card-set card-set__follow-buttons">
           <li class="card-set__icons-footer card-set--marg-icons">
             <a href="">
               <svg class="card-set__icon card-set--color-icons" width="20" height="20">
@@ -366,18 +371,18 @@
           </li>
         </ul>
       </div>
-      <div>
-        <h2 class="header-footer header-footer--centre">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-        <div class="main-nav">
-          <input class="main-nav-footer__email" type="email" name="mail" id="email" placeholder="E-mail" />
-          <div class="">
-            <button class="button-footer main-nav">
-              Подписаться
-              <svg class="button-footer__logo" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
+    </div>
+    <div>
+      <h2 class="header-footer header-footer--centre">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+      <div class="main-nav">
+        <input class="main-nav-footer__email" type="email" name="mail" id="email" placeholder="E-mail" />
+        <div class="">
+          <button class="button-footer main-nav">
+            Подписаться
+            <svg class="button-footer__logo" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </div>

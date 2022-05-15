@@ -13,8 +13,9 @@
     }
 
 	&--footer-web{
-		@media screen and (max-width: 1199px) {
-				text-align: center;
+		text-align: center;
+		@media screen and (min-width: 1200px) {
+				text-align: start;
 			}
 		margin-bottom: 20px;
 	}
